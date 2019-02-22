@@ -27,3 +27,4 @@ Bajar_Precios<-function(c,tk,f1,f2){
   Datos<-Quandl.datatable("WIKI/PRICES",qopts.columns=c,ticker=tk,date.gte=f1,date.lte=f2,paginate = TRUE)
   return (data.frame(Datos))
 }
+cs<-c("adj_close","ticker","date")
